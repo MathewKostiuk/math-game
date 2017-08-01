@@ -11,13 +11,13 @@ module MathGame
       @@total_players += 1
       @lives = lives
       puts '----- TYPE IN YOUR NAME(OPTIONAL) -----'
-      test = gets.strip
-      if test.empty? && @@total_players == 1
-        test = DEFAULT_NAMES[0]
-      elsif test.empty? && @@total_players == 2
-        test = DEFAULT_NAMES[1]
+      input = gets.strip
+      if input.empty? && @@total_players == 1
+        input = DEFAULT_NAMES[0]
+      elsif input.empty? && @@total_players == 2
+        input = DEFAULT_NAMES[1]
       end
-      @name = test
+      @name = input
     end
 
   end
